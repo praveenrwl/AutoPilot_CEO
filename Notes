@@ -1,0 +1,23 @@
+autopilot_ceo/
+│
+├── app/                     # Frontend: Streamlit UI
+│   ├── __init__.py
+│   ├── main.py              # Streamlit UI entry point
+│   └── pages/               # Extra Streamlit pages
+│
+├── agents/                  # All agents (e.g., MarketIntel, BizOpsBot)
+│   ├── __init__.py
+│   └── market_intel.py      # First agent we'll build
+│
+├── services/                # For scraping, RAG, API tools, etc.
+│   ├── __init__.py
+│   ├── scraper.py
+│   └── langchain_utils.py
+│
+├── data/                    # Local data cache or static files
+│   └── __keep__.txt
+│
+├── .env                     # For your API keys (never upload to GitHub)
+├── requirements.txt         # Python libraries
+├── README.md                # Project overview
+└── run.sh                   # Shortcut to run Streamlit app
